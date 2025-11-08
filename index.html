@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>¿Qué es el alojamiento web? — Resumen</title>
+<meta name="description" content="Resumen didáctico sobre qué es el alojamiento web, tipos, ventajas y cómo AWS lo ofrece." />
+<style>
+
+    :root{
+
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#9aa6b2;
+
+      --maxw:980px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+
+      margin:0; background:linear-gradient(180deg,#071026 0%, #071827 100%); color:#e6f0f3;
+
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+
+    }
+
+    .container{max-width:var(--maxw); margin:28px auto; padding:24px;}
+
+    header{
+
+      display:flex; gap:16px; align-items:center; margin-bottom:18px;
+
+      background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+
+      padding:16px; border-radius:12px;
+
+    }
+
+    .logo{
+
+      width:64px; height:64px; border-radius:8px; background:linear-gradient(135deg,#05263a,#073246);
+
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--accent);
+
+      box-shadow: 0 6px 18px rgba(6,182,212,0.06);
+
+    }
+
+    h1{font-size:1.4rem; margin:0}
+
+    p.lead{margin:6px 0 0; color:var(--muted); font-size:0.95rem}
+
+    main{display:grid; grid-template-columns: 1fr; gap:18px; margin-top:18px;}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px; border-radius:12px; box-shadow: 0 6px 24px rgba(2,6,23,0.6);}
+
+    .grid-2{display:grid; grid-template-columns: 1fr 320px; gap:18px;}
+
+    @media (max-width:880px){ .grid-2{grid-template-columns: 1fr} .logo{width:56px;height:56px}}
+
+    h2{margin:0 0 10px 0; color:#fff}
+
+    ul{margin:8px 0 0 18px; color:var(--muted)}
+
+    .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(6,182,212,0.08); color:var(--accent); font-weight:600; font-size:0.85rem}
+
+    .cta{display:inline-block; margin-top:12px; padding:10px 14px; border-radius:10px; background:var(--accent); color:#012; text-decoration:none; font-weight:600}
+
+    footer{margin-top:18px; color:var(--muted); font-size:0.9rem; text-align:center}
+
+    /* pequeño acordeón para preguntas */
+
+    .qa .q{cursor:pointer; padding:12px; border-radius:8px; background:rgba(255,255,255,0.01); margin-bottom:8px; display:flex; justify-content:space-between; align-items:center}
+
+    .a{display:none; padding:12px; color:var(--muted)}
+
+    .open .a{display:block}
+
+    .meta{font-size:0.85rem; color:var(--muted)}
+
+    code{background:#021024;padding:4px 6px;border-radius:6px;color:#9ae6ff}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">A. WEB&nbsp;</div>
+<div>
+<h1>¿Qué es el alojamiento web</h1>
+<p class="lead">Explicación clara y práctica sobre el alojamiento web, sus tipos y ventajas — basada en la documentación pública de AWS.</p>
+</div>
+</header>
+<main>
+<section class="card">
+<span class="badge">Concepto</span>
+<h2>¿Qué es el alojamiento web?</h2>
+<p>
+
+          El alojamiento web es el servicio que guarda los archivos y datos de un sitio o aplicación para que estén accesibles en Internet desde cualquier dispositivo.
+
+          Los archivos se colocan en servidores administrados por un proveedor de hosting; además suelen incluir servicios asociados como seguridad, copias de seguridad y soporte.
+</p>
+<p class="meta">Fuente: página de AWS sobre alojamiento web.  [oai_citation:0‡Amazon Web Services, Inc.](https://aws.amazon.com/es/what-is/web-hosting/)</p>
+</section>
+<div class="grid-2">
+<section class="card">
+<h2>¿Por qué es importante?</h2>
+<ul>
+<li><strong>Rendimiento:</strong> los proveedores invierten en hardware y redes para que las páginas carguen rápido.</li>
+<li><strong>Fiabilidad:</strong> realizan mantenimiento, actualizaciones y redundancia para mantener el servicio activo.</li>
+<li><strong>Soporte y seguridad:</strong> monitorizan, realizan copias de seguridad y aplican medidas de cumplimiento.</li>
+</ul>
+<p class="meta">Resumen y ejemplos basados en explicaciones públicas de AWS.  [oai_citation:1‡Amazon Web Services, Inc.](https://aws.amazon.com/es/what-is/web-hosting/)</p>
+</section>
+<aside class="card">
+<h2>Servicios y ejemplos (rápido)</h2>
+<p class="meta">AWS describe distintas opciones de alojamiento: compartido, VPS, dedicado y en la nube, cada una con ventajas y límites según necesidades.</p>
+<ul>
+<li><strong>Alojamiento compartido</strong> — barato, fácil de empezar.</li>
+<li><strong>VPS</strong> — más control y escalabilidad.</li>
+<li><strong>Dedicado</strong> — servidor exclusivo para alta demanda.</li>
+<li><strong>Nube</strong> — escalado automático, redundancia y pago por uso.</li>
+</ul>
+<a class="cta" href="https://aws.amazon.com/es/what-is/web-hosting/" target="_blank" rel="noopener">Ver la página original</a>
+</aside>
+</div>
+<section class="card">
+<h2>Características a considerar al elegir hosting</h2>
+<ul>
+<li><strong>Espacio en disco</strong> y crecimiento proyectado.</li>
+<li><strong>Ancho de banda</strong> vs transferencia real (similitud: tubería vs agua).</li>
+<li><strong>Cuentas de correo</strong>, accesos FTP y control de la infraestructura.</li>
+<li><strong>Soporte técnico</strong> y requerimientos de cumplimiento y seguridad.</li>
+</ul>
+<p class="meta">Información adaptada y resumida de la guía informativa de AWS.  [oai_citation:2‡Amazon Web Services, Inc.](https://aws.amazon.com/es/what-is/web-hosting/)</p>
+</section>
+<section class="card">
+<h2>Mini guía: cómo presentar esto en tu propia web</h2>
+<ol>
+<li>Inicio con un resumen claro (qué es y para quién va dirigido).</li>
+<li>Sección de ventajas (rendimiento, fiabilidad, seguridad).</li>
+<li>Tipos de hosting con pros/cons para cada uno.</li>
+<li>Recursos y enlaces (documentación oficial, tutoriales).</li>
+</ol>
+<p style="margin-top:8px; color:var(--muted)">&nbsp;</p>
+<p class="meta">&nbsp;</p>
+</section>
+</main>
+<footer>
+<div>&nbsp;</div>
+<div style="margin-top:6px; font-size:0.85rem; color:var(--muted)">Fuentes: AWS — “¿En qué consiste el alojamiento web?”.  [oai_citation:4‡Amazon Web Services, Inc.](https://aws.amazon.com/es/what-is/web-hosting/)</div>
+</footer>
+</div>
+<script>
+
+    // pequeño script para alternar preguntas
+
+    function toggle(el){
+
+      el.classList.toggle('open');
+
+    }
+
+    // mejora: detecta parámetros ?theme=light para alternar (simple)
+
+    (function(){
+
+      const url = new URL(location);
+
+      if(url.searchParams.get('theme') === 'light'){
+
+        document.documentElement.style.setProperty('--bg','#fff');
+
+        document.body.style.color = '#042a33';
+
+      }
+
+    })();
+</script>
+</body>
+</html>
